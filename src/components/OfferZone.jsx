@@ -1,7 +1,12 @@
 import React from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import OfferDays from "./OfferDays";
 
 const OfferZone = () => {
+  //Add how many dates need to the offer will visible
+  const offerEndDate = new Date();
+  offerEndDate.setDate(offerEndDate.getDate() + 2);
+
   return (
     <>
       {/* First Section */}
@@ -11,41 +16,24 @@ const OfferZone = () => {
           <p className="ml-4 text-red-700 text-xl">Today's</p>
         </div>
         <div className="pt-4 flex justify-between items-center ">
-          <h1 className="text-3xl font-bold tracking-wide">Flash Sales </h1>
+          <div className="flex gap-x-20 items-center">
+            <h1 className="text-3xl font-bold tracking-wide">Flash Sales </h1>
 
-          {/* Days counter */}
-          <div className="flex">
-            <div className="flex flex-col items-center p-4 ">
-              <h1>Days</h1>
-              <h1>03</h1>
-            </div>
-            <div className="flex items-center  p-3 ">:</div>
-            <div className="flex flex-col  items-center p-4">
-              <h1>Hours</h1>
-              <h1>02</h1>
-            </div>
-            <div className="flex items-center p-3">:</div>
-            <div className="flex flex-col items-center p-4">
-              <h1>Minutes</h1>
-              <h1>33</h1>
-            </div>
-            <div className="flex items-center p-3">:</div>
-            <div className="flex flex-col p-4 items-center">
-              <h1>Seconds</h1>
-              <h1>03</h1>
-            </div>
+            {/* Days counter */}
+
+            <OfferDays targetdDate={offerEndDate} />
           </div>
 
           {/* Arrow Button */}
 
-          <div className="mr-10 flex gap-4 ">
-            <div className=" w-[30px] h-[30px] bg-gray-200 rounded-full flex justify-center items-center">
-              <button className="text-gray-600">
+          <div className="mr-50 flex gap-4 ">
+            <div className=" w-[30px] h-[30px] bg-gray-200 rounded-full flex justify-center items-center hover:bg-amber-500">
+              <button className="text-gray-600 hover:scale-125 ">
                 <ArrowLeft />
               </button>
             </div>
-            <div className=" w-[30px] h-[30px] bg-gray-200 rounded-full flex justify-center items-center">
-              <button className="text-gray-600">
+            <div className=" w-[30px] h-[30px] bg-gray-200 rounded-full flex justify-center items-center hover:bg-amber-400">
+              <button className="text-gray-600 hover:scale-125">
                 <ArrowRight />
               </button>
             </div>
