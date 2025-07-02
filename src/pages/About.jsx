@@ -1,7 +1,7 @@
 import React from 'react'
 
 const About=()=>{
-    return <div>
+    return <div className='flex grow'>
         <h1>About</h1>
     </div>
 }
