@@ -1,0 +1,16 @@
+export const items = [
+  { id: 1, img: "/phone.png", title: "Phone" },
+  { id: 2, img: "/camera.png", title: "Camera" },
+  { id: 3, img: "/Computer.png", title: "Computer" },
+  { id: 4, img: "/Gamepad.png", title: "GamePad" },
+  { id: 5, img: "/Headphone.png", title: "HeadPhone" },
+  { id: 6, img: "/SmartWatch.png", title: "SmartWatch" },
+  { id: 7, img: "/camera.png", title: "Camera" },
+  { id: 8, img: "/Computer.png", title: "Computer" },
+  { id: 9, img: "/Gamepad.png", title: "GamePad" },
+  { id: 10, img: "/Headphone.png", title: "HeadPhone" },
+  { id: 11, img: "/SmartWatch.png", title: "SmartWatch" },
+  { id: 12, img: "/Gamepad.png", title: "GamePad" },
+  { id: 13, img: "/Headphone.png", title: "HeadPhone" },
+  { id: 14, img: "/SmartWatch.png", title: "SmartWatch" },
+];
